@@ -31,15 +31,15 @@ boo
 crabrave
 die
 hello
-meme
 pogchamp
 predict
 randnum
+rick
 ```
 ```
 Science: 
 pi
-ping
+ptable
 ```
 ```
 Linux: 

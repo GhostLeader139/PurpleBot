@@ -121,9 +121,9 @@ consonants_en = [
     "n","p","q","r","s","t","v","w","x","z"
 ]
 
-vowels_ru = ["а","е","и","о","у","ы","э","ю","я","ь"]
+vowels_ru = ["а","е","и","о","у","ы","э","ю","я"]
 
-consonants_ru = ["б","в","г","д","ж","з","й","к","л","м","н", \
+consonants_ru = ["б","в","г","д","ж","з","к","л","м","н", \
                  "п","р","с","т","ф","х","ц","ч","ш","щ",]
 
 @client.event
@@ -177,7 +177,7 @@ async def boo(ctx):
     await ctx.send(random.choice(scary_things))
 
 @client.command()
-async def meme(ctx):
+async def rick(ctx):
     await ctx.send(f'https://tenor.com/view/rick-astley-rick-roll-dancing-dance-moves-gif-14097983')
 
 @client.command()
