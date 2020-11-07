@@ -4,6 +4,7 @@ import random
 from discord.ext import commands
 
 client = commands.Bot(command_prefix="p:")
+client.remove_command('help')
 
 greetings = [
     "Hello!", "Hallo!", "Bonjour!", "Ciao!", "¡Hola!",
@@ -110,7 +111,7 @@ debian_versions = [
     "Debian 8 (Jessie)", \
     "Debian 9 (Stretch)", \
     "Debian 10 (Buster)", \
-    "Debian 11 (Bullseye)"
+    "Debian 11 (Bullseye)" \
 ]
 
 vowels_en = ["a","e","i","o","u","y"]
@@ -136,36 +137,12 @@ async def on_ready():
     print("PurpleBot has connected to Discord")
 
 @client.command()
-async def help(ctx):
-    await ctx.send(
-'''
-```
-PurpleBot Command List
-
-Moderation: 
-   ban, kick, mute, unban, unmute
-
-Fun: 
-   boo, crabrave, die, hello, meme, pogchamp, predict, randnum
-
-Science: 
-   pi, ping
-
-Linux: 
-   debian, distro, groovy, interject, ubuntu
-
-Utility: 
-   about, github, help, invite, license, ping, unload
-```
-'''
-    )
-@client.command()
 async def ping(ctx):
-    await ctx.send(f':ping_pong: Pong! Client-side ping latency is **{round(client.latency * 1000)}ms**')
+    await ctx.send(f':ping_pong: **Pong!** Client-side ping latency is **{round(client.latency * 1000)}ms**')
 
 @client.command()
 async def about(ctx):
-    await ctx.send(f'PurpleBot is a Discord bot by Purple Scientist written in Python.')
+    await ctx.send(f'PurpleBot is a Discord bot by Purple Scientist written in Python. PurpleBot is licensed under MIT. That means it\'s open-source and you are free to redistribute your own modifications of the bot.')
 
 @client.command()
 async def license(ctx):
@@ -200,8 +177,8 @@ async def boo(ctx):
     await ctx.send(random.choice(scary_things))
 
 @client.command()
-async def rick(ctx):
-    await ctx.send(f'https://youtu.be/dQw4w9WgXcQ')
+async def meme(ctx):
+    await ctx.send(f'https://tenor.com/view/rick-astley-rick-roll-dancing-dance-moves-gif-14097983')
 
 @client.command()
 async def crabrave(ctx):
@@ -241,7 +218,7 @@ async def debian(ctx):
     await ctx.send(random.choice(debian_versions))
 
 @client.command()
-async def gnu(ctx):
+async def interject(ctx):
     await ctx.send(
 '''
 I'd just like to interject for a moment. What you’re referring to as Linux, is in fact, GNU/Linux, or as I’ve recently taken to calling it, GNU plus Linux. Linux is not an operating system unto itself, but rather another free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities and vital system components comprising a full OS as defined by POSIX.
