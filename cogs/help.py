@@ -19,23 +19,45 @@ Categories:
 ```*
 ```
 Moderation: 
-   ban, kick, mute, unban, unmute
+ban
+kick
+mute
+unban
+unmute
 ```
 ```
 Fun: 
-   boo, crabrave, die, hello, meme, pogchamp, predict, randnum
+boo
+crabrave
+die
+hello
+meme
+pogchamp
+predict
+randnum
 ```
 ```
 Science: 
-   pi, ping
+pi
+ping
 ```
 ```
 Linux: 
-   debian, distro, groovy, interject, ubuntu
+debian
+distro
+groovy
+interject
+ubuntu
 ```
 ```
 Utility: 
-   about, github, help, invite, license, ping, unload
+about
+github
+help
+invite
+license
+ping
+unload
 ```
  ''')
   
