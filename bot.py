@@ -31,6 +31,41 @@ death_scenarios = [
 
 scary_things = ["😈", "💀", "👻", "🎃", "🧛‍♂️", "🦇", "🧟"]
 
+windows_versions = [
+    "Windows 1.0", \
+    "Windows 2.x", \
+    "Windows 3.x", \
+    "Windows 95", \
+    "Windows 98", \
+    "Windows 2000", \
+    "Windows ME", \
+    "Windows XP", \
+    "Windows Vista", \
+    "Windows 7", \
+    "Windows 8", \
+    "Windows 10"
+]
+
+macos_versions = [
+    "macOS 10.0 (Cheetah)", \
+    "macOS 10.1 (Puma)", \
+    "macOS 10.2 (Jaguar)", \
+    "macOS 10.3 (Panther)", \
+    "macOS 10.4 (Tiger)", \
+    "macOS 10.5 (Leopard)", \
+    "macOS 10.6 (Snow Leopard)", \
+    "macOS 10.7 (Lion)", \
+    "macOS 10.8 (Mountain Lion)", \
+    "macOS 10.9 (Mavericks)", \
+    "macOS 10.10 (Yosemite)", \
+    "macOS 10.11 (El Capitan)", \
+    "macOS 10.12 (Sierra)", \
+    "macOS 10.13 (High Sierra)", \
+    "macOS 10.14 (Mojave)", \
+    "macOS 10.15 (Catalina)", \
+    "macOS 11.0 (Big Sur)"
+]
+
 distros = [
     "Ubuntu", \
     "Debian", \
@@ -114,6 +149,25 @@ debian_versions = [
     "Debian 11 (Bullseye)", \
     "Debian 12 (Bookworm)", \
     "Debian 13 (Trixie)"
+]
+
+android_versions = [
+    "Android 1.5 (Cupcake)", \
+    "Android 1.6 (Donut)", \
+    "Android 2.0 (Eclair)", \
+    "Android 2.2 (Froyo)", \
+    "Android 2.3 (Gingerbread)", \
+    "Android 3.0 (Honeycomb)", \
+    "Android 4.0 (Ice Cream Sandwich)", \
+    "Android 4.1 (Jelly Bean)", \
+    "Android 4.4 (KitKat)", \
+    "Android 5.0 (Lollipop)", \
+    "Android 6.0 (Marshmallow)", \
+    "Android 7.0 (Nougat)", \
+    "Android 8.0 (Oreo)", \
+    "Android 9 (Pie)", \
+    "Android 10", \
+    "Android 11" 
 ]
 
 vowels_en = ["a","e","i","o","u","y"]
@@ -208,6 +262,14 @@ async def pogchamp(ctx):
 ''')
 
 @client.command()
+async def windows(ctx):
+    await ctx.send(random.choice(windows_versions))
+
+@client.command()
+async def macos(ctx):
+    await ctx.send(random.choice(macos_versions))
+
+@client.command()
 async def distro(ctx):
     await ctx.send(random.choice(distros))
 
@@ -218,6 +280,10 @@ async def ubuntu(ctx):
 @client.command()
 async def debian(ctx):
     await ctx.send(random.choice(debian_versions))
+
+@client.command()
+async def android(ctx):
+    await ctx.send(random.choice(android_versions))
 
 @client.command()
 async def interject(ctx):

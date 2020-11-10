@@ -42,12 +42,15 @@ pi
 ptable
 ```
 ```
-Linux: 
+IT & Linux: 
+android
 debian
 distro
 groovy
 interject
+macos
 ubuntu
+windows
 ```
 ```
 Utility: 
