@@ -182,7 +182,7 @@ async def rick(ctx):
 
 @client.command()
 async def crabrave(ctx):
-    await ctx.send(f'https://tenor.com/view/crab-safe-dance-gif-13211112')
+    await ctx.send(f'https://tenor.com/view/crabs-dancing-having-fun-having-party-party-gif-15660530')
 
 @client.command()
 async def pogchamp(ctx):
