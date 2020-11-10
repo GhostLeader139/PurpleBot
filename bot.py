@@ -111,7 +111,9 @@ debian_versions = [
     "Debian 8 (Jessie)", \
     "Debian 9 (Stretch)", \
     "Debian 10 (Buster)", \
-    "Debian 11 (Bullseye)" \
+    "Debian 11 (Bullseye)", \
+    "Debian 12 (Bookworm)", \
+    "Debian 13 (Trixie)"
 ]
 
 vowels_en = ["a","e","i","o","u","y"]
